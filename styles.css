@@ -1,0 +1,54 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.translate-button {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.invalid-char {
+    color: red;
+}
+
+.watermark {
+  font-size: 14px;
+}
+
+a {
+  color: #28a745;
+}
