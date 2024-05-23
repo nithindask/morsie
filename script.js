@@ -63,6 +63,13 @@ function validateInput() {
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle('dark-mode');
+
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (body.classList.contains('dark-mode')) {
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
 }
 
 function copyText(elementId) {
