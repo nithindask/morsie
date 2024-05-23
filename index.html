@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About me | Nithin Das K</title>
+<title>Morsie | Morse code translator</title>
 <link href="icon.png" rel="icon">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -11,25 +11,22 @@
 </head>
 <body class="light-mode">
 
-<h1>About me</h1>
-<br><br><br>
+<h1>Morsie</h1>
+
+<label for="inputText">Text :</label><br>
 <div class="input-container">
-<h4>Hi!</h4>
-<p><b>Let me give you an <b><font class="introduction-head">INTRODUCTION</font></b> <font class="small-text">(<i>about myself</i> ^_- )</font></b></p>
-<p class="desc">My name is Nithin Das and I am from Kerala. Yeah, just one of those millions of proud Indians and also; a "Malayali" : ). I am just an ordinary student who wants to be successful but doesn't know how to. And yes, I don't have any idea about my future nor yours. I am someone who loves tech related things like you see in those movies which shows futuristic tech and all that stuff. I love to read fictional books and also to make people happy. I also love photography, photo and video editing, coding, music and sleeping. I also enjoys other people's company. I like to learn new skills and aquire new knowledge. And to be honest, I think I'm pretty good at that. Like, I do need help sometimes. But I believe that I am a fast learner. I get happy over little things and I believe that everyone can be happy if they tries to be. I am not a proffesionalist. Basically, I am a perfectionist. Yeah, you read that right. I like everything to be perfect. They do need some flaws, but not that much.<br><br> And why did I say all this to you ? I don't know. I am sorry if it was irritating for you to read all these nonsense while this was meant to be an "About me" page, but this is all about me. Just know that it doesn't really matter who you are or who you were, just know that I love you and I will always will.<br><br></p>
-</div>
-<hr>
+    <textarea id="inputText" placeholder="Enter text to translate" oninput="validateInput()"></textarea>
+    <i class="fas fa-copy copy-icon" onclick="copyText('inputText')"></i>
+</div><br><br>
+<button class="translate-button" onclick="translateToMorse()">Translate to Morse</button>
+<button class="translate-button" onclick="translateToText()">Translate to Text</button><br><br>
+<label for="outputMorse">Morse :</label><br>
 <div class="input-container">
-<p>Let me show you some of my <b><font class="introduction-head">WORKS</font></b> <font class="small-text">(<i>its just random</i>  ¬_¬)</font></p>
-<div class="works">
-<img class="work" width="160" height="228" src="big-man.png">
-<img class="work" width="160" height="228" src="funky-man.png">
+    <textarea id="outputMorse" placeholder="Enter morse to translate"></textarea>
+    <i class="fas fa-copy copy-icon" onclick="copyText('outputMorse')"></i>
 </div>
-</div>
-<hr>
-<br><p>That's it. Bye <b>&nbsp;&nbsp;♡</b></p>
-<br><br><br>
-<p class="watermark">© All rights reserved to <a href="https://instagram.com/_nithin.das">nithindas</a></p>
+<br><br>
+<p class="watermark">© All rights reserved to <a href="https://nithindask.github.io/aboutme">nithindas</a></p>
 
 <div class="theme-toggle" onclick="toggleTheme()"></div>
 
