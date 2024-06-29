@@ -9,24 +9,24 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <link href="styles.css" rel="stylesheet">
 </head>
-<body class="light-mode">
+<body class="dark-mode">
 
 <h1>Morsie</h1>
 
-<label for="inputText">Text :</label><br>
+<label for="inputText">Text :<br></label><br>
 <div class="input-container">
-    <textarea id="inputText" placeholder="Enter text to translate" oninput="validateInput()"></textarea>
+    <textarea id="inputText" placeholder=" Enter text to translate" oninput="validateInput()"></textarea>
     <i class="fas fa-copy copy-icon" onclick="copyText('inputText')"></i>
 </div><br><br>
 <button class="translate-button" onclick="translateToMorse()">Translate to Morse</button>
 <button class="translate-button" onclick="translateToText()">Translate to Text</button><br><br>
-<label for="outputMorse">Morse :</label><br>
+<label for="outputMorse">Morse :<br></label><br>
 <div class="input-container">
-    <textarea id="outputMorse" placeholder="Enter morse to translate"></textarea>
+    <textarea id="outputMorse" placeholder=" Enter morse to translate"></textarea>
     <i class="fas fa-copy copy-icon" onclick="copyText('outputMorse')"></i>
 </div>
 <br><br>
-<p class="watermark">© All rights reserved to <a href="https://nithindask.github.io/aboutme">nithindas</a></p>
+<p class="watermark">© All rights reserved to <a href="https://instagram.com/_nithin.das">nithindas</a></p>
 
 <div class="theme-toggle" onclick="toggleTheme()"></div>
 
